@@ -1,0 +1,123 @@
+@use "../../styles/variables" as *
+$padding: 2em
+
+.city
+  display: flex
+  flex-direction: column
+  gap: 1em
+  color: white
+.title
+  text-align: center
+  font-size: 2em
+  opacity: .5
+.main
+  border-radius: .5em
+  display: flex
+  justify-content: space-between
+  width: 100%
+  @include elem-bg
+
+  overflow: hidden
+
+  max-height: 300px
+
+.mainImg
+  width: 300px
+  height: 300px
+  object-fit: cover
+  object-position: center
+
+.header
+
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  gap: 2em
+  padding: $padding
+
+.name
+  font-size: 2em
+  text-align: center
+
+.temperature
+  display: flex
+  align-items: center
+  justify-content: center
+  gap: .5em
+
+  & img
+    width: 80px
+
+
+.temperatureInfo
+  display: flex
+  flex-direction: column
+.tempValue
+  font-size: 4em
+  font-weight: bold
+
+  & p
+    text-align: center
+    position: relative
+    line-height: 1
+
+  & sup
+    position: absolute
+    font-size: .35em
+    top: 20%
+
+.feelsLike
+  font-size: 1.25em
+
+.weather
+  display: block
+  text-align: center
+
+
+.details
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  padding: $padding
+  gap: 1em
+
+.subInfo
+  display: flex
+  flex-direction: column
+  gap: .75em
+
+.line
+  display: flex
+  align-items: center
+  gap: .5em
+
+  & img
+    width: 20px
+    object-fit: cover
+
+
+.lineInfo
+  display: flex
+  gap: .5em
+
+  & span
+    color: cornflowerblue
+
+
+@media (max-width: 768px)
+  .main
+    flex-wrap: wrap
+    max-height: revert
+    justify-content: space-around
+    gap: 1.5em
+
+  .mainImg
+    width: 100%
+
+  .header
+    padding: 0 0 2em 0
+    gap: .75em
+
+  .details
+    padding: 0 0 2em 0
+

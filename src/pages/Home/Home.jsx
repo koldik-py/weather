@@ -1,4 +1,6 @@
-import './Home.module.sass'
+import CityCard from '../../components/CityCard'
+import SearchBar from '../../components/SearchBar'
+import styles from './Home.module.sass'
 
 const Home = props => {
   const data = [
@@ -6,33 +8,39 @@ const Home = props => {
       cityName: 'Москва',
       country: 'Россия',
       date: new Date().toLocaleDateString(), // Текущая дата
-      temperature: '0°C',
+      temperature: '0',
       weather: 'Солнечно'
     },
     {
       cityName: 'Нью-Йорк',
       country: 'США',
       date: new Date().toLocaleDateString(), // Текущая дата
-      temperature: '5°C',
+      temperature: '5',
       weather: 'Облачно'
     },
     {
       cityName: 'Токио',
       country: 'Япония',
       date: new Date().toLocaleDateString(), // Текущая дата
-      temperature: '10°C',
+      temperature: '10',
       weather: 'Дождливо'
     }
   ]
+
+  const dataElems = data.map((info, index) => (
+    <CityCard data={info} key={info.cityName} />
+  ))
   return (
-    <header className='home'>
-      <div className='container'>
-        <div className='home__container'>
-          <div className='home__search'></div>
-          <div className='home__content'></div>
+    <>
+      <div className={styles.home__container}>
+        <div className={styles.home__search}>
+          <SearchBar onSearch={city => console.log('Ищем:', city)} />
+        </div>
+        <div className={styles.home__content}>
+          {dataElems} {dataElems}
         </div>
       </div>
-    </header>
+    </>
   )
 }
 
