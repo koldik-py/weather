@@ -1,0 +1,16 @@
+@use "./variables"
+
+body
+  background: conic-gradient(from 0deg, #1e3a8a, #9333ea)
+  animation: rotateBg 10s infinite linear
+  min-height: 100vh
+
+
+/* Вращение */
+@keyframes rotateBg
+  from
+    transform: rotate(0deg)
+
+  to
+    transform: rotate(360deg)
+
