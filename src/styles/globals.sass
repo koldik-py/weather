@@ -1,16 +1,31 @@
-@use "./variables"
+@use "./variables.sass" as *
 
 body
-  background: conic-gradient(from 0deg, #1e3a8a, #9333ea)
-  animation: rotateBg 10s infinite linear
+  background: linear-gradient(-45deg, #1e3a8a, #9333ea, #30478C, #1e3a8a)
+  background-size: 400% 400%
+  animation: gradientAnimation 30s infinite linear
+
+
+  font-family: $font-family-primary, system-ui,-apple-system,"Segoe UI",Roboto,Ubuntu, Cantarell, "Noto Sans",sans-serif
+  font-size: 16px
+  line-height: 1.25
+
+  font-optical-sizing: auto
+  font-style: normal
+  font-variation-settings: "wdth" 100, "YTLC" 500
+
+/* Анимация градиента */
+@keyframes gradientAnimation
+  0%
+    background-position: 0% 100%
+  50%
+    background-position: 100% 100%
+  100%
+    background-position: 0% 100%
+
+
+.App
+  width: 100%
   min-height: 100vh
-
-
-/* Вращение */
-@keyframes rotateBg
-  from
-    transform: rotate(0deg)
-
-  to
-    transform: rotate(360deg)
-
+  display: flex
+  flex-direction: column
