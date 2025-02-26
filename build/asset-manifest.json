@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d9ff041b.css",
+    "main.js": "/static/js/main.fd57035b.js",
+    "static/js/453.0ccb7fb4.chunk.js": "/static/js/453.0ccb7fb4.chunk.js",
+    "static/media/plash.jpg": "/static/media/plash.b47b43352fe9a0d4ce38.jpg",
+    "static/media/Солнце.svg": "/static/media/Солнце.c125f8ebd103e59725f16312c9436da9.svg",
+    "static/media/pressure.svg": "/static/media/pressure.7c26dd1b9661a2cf0e199b645b94a50c.svg",
+    "static/media/search.svg": "/static/media/search.8da0610579f0d6a4ad17cac1dff7de0f.svg",
+    "index.html": "/index.html",
+    "static/media/heart.svg": "/static/media/heart.e9771cda5db189e05ce2a31cfe176def.svg",
+    "static/media/exit.svg": "/static/media/exit.c3cb40e9f72c5e018952c1a74ea6493b.svg",
+    "static/media/Влажность.svg": "/static/media/Влажность.2d0f6966d737c8a88453d15433048136.svg",
+    "static/media/ветер.svg": "/static/media/ветер.fb5ef954b6e377ec158a3a731be44e39.svg",
+    "main.d9ff041b.css.map": "/static/css/main.d9ff041b.css.map",
+    "main.fd57035b.js.map": "/static/js/main.fd57035b.js.map",
+    "453.0ccb7fb4.chunk.js.map": "/static/js/453.0ccb7fb4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9ff041b.css",
+    "static/js/main.fd57035b.js"
+  ]
+}
