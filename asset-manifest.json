@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/weather/static/css/main.d9ff041b.css",
-    "main.js": "/weather/static/js/main.63ab2026.js",
+    "main.js": "/weather/static/js/main.f3935c59.js",
     "static/js/453.0ccb7fb4.chunk.js": "/weather/static/js/453.0ccb7fb4.chunk.js",
     "static/media/plash.jpg": "/weather/static/media/plash.b47b43352fe9a0d4ce38.jpg",
     "static/media/Солнце.svg": "/weather/static/media/Солнце.c125f8ebd103e59725f16312c9436da9.svg",
@@ -13,11 +13,11 @@
     "static/media/Влажность.svg": "/weather/static/media/Влажность.2d0f6966d737c8a88453d15433048136.svg",
     "static/media/ветер.svg": "/weather/static/media/ветер.fb5ef954b6e377ec158a3a731be44e39.svg",
     "main.d9ff041b.css.map": "/weather/static/css/main.d9ff041b.css.map",
-    "main.63ab2026.js.map": "/weather/static/js/main.63ab2026.js.map",
+    "main.f3935c59.js.map": "/weather/static/js/main.f3935c59.js.map",
     "453.0ccb7fb4.chunk.js.map": "/weather/static/js/453.0ccb7fb4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d9ff041b.css",
-    "static/js/main.63ab2026.js"
+    "static/js/main.f3935c59.js"
   ]
 }
