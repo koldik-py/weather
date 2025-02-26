@@ -6,7 +6,7 @@ import styles from './CityCard.module.sass'
 import { useDispatch, useSelector } from 'react-redux'
 import { fetchWeather } from '../../api/weatherApi'
 import { removeFavorite } from '../../store/favoritesSlice'
-import icon from '../../utils/icon.js'
+import getCustomWeatherIcon from '../../utils/icon.js'
 import sun from '../../assets/Солнце.svg'
 
 import heart from '../../assets/heart.svg'
@@ -81,7 +81,7 @@ const CityCard = ({ cityName }) => {
       </div>
       <div className={styles.content} onClick={goCard}>
         <div className={styles.details}>
-          <img src={icon(city.iconName)} alt='Солнечно' />
+          <img src={getCustomWeatherIcon(city.iconName)} alt='Солнечно' />
           <div className={styles.text}>
             <h1 className={styles.title}>
               {city.name ? city.name : ''}

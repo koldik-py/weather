@@ -3,7 +3,6 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit'
 const API_KEY = process.env.REACT_APP_WEATHER_API_KEY
 const BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
 
-// Асинхронный экшен для загрузки погоды
 export const fetchWeather = createAsyncThunk(
   'weather/fetchWeather',
   async (cityName, { rejectWithValue }) => {
@@ -36,7 +35,7 @@ export const fetchWeather = createAsyncThunk(
 const weatherSlice = createSlice({
   name: 'weather',
   initialState: {
-    cities: {}, // Состояние теперь хранит данные для нескольких городов
+    cities: {},
     loading: false,
     error: null
   },
@@ -50,7 +49,7 @@ const weatherSlice = createSlice({
       .addCase(fetchWeather.fulfilled, (state, action) => {
         state.loading = false
         const { name } = action.payload
-        state.cities[name] = action.payload // Добавляем или обновляем данные для города
+        state.cities[name] = action.payload
       })
       .addCase(fetchWeather.rejected, (state, action) => {
         state.loading = false

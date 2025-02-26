@@ -1,12 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-// Читаем избранное из localStorage
 const loadFavorites = () => {
   const stored = localStorage.getItem('favorites')
   return stored ? JSON.parse(stored) : []
 }
 
-// Сохраняем избранное в localStorage
 const saveFavorites = favorites => {
   localStorage.setItem('favorites', JSON.stringify(favorites))
 }

@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import styles from './CityInfo.module.sass'
 
 import sun from '../../assets/Солнце.svg'
+import getCustomWeatherIcon from '../../utils/icon.js'
+
 import icon1 from '../../assets/Влажность.svg'
 import icon2 from '../../assets/ветер.svg'
 import icon3 from '../../assets/pressure.svg'
@@ -16,7 +18,8 @@ const CityInfo = ({ weatherData }) => {
     feelsLike,
     humidity,
     windSpeed,
-    pressure
+    pressure,
+    iconName
   } = weatherData
   return (
     <section className={styles.city}>
@@ -26,7 +29,7 @@ const CityInfo = ({ weatherData }) => {
         <div className={styles.header}>
           <h2 className={styles.name}>{name}</h2>
           <div className={styles.temperature}>
-            <img src={sun} alt='' />
+            <img src={getCustomWeatherIcon(iconName)} alt='' />
             <div className={styles.temperatureInfo}>
               <div className={styles.tempValue}>
                 <p>
