@@ -1,13 +1,21 @@
 import CityDetails from './pages/CityDetails'
 import Home from './pages/Home'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   const count = 0
 
   return (
-    <header className='App'>
-      <div className='container'>{count == 0 ? <Home /> : <CityDetails />}</div>
-    </header>
+    <Router>
+      <header className='App'>
+        <div className='container'>
+          <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/city/:cityName' element={<CityDetails />} />
+          </Routes>
+        </div>
+      </header>
+    </Router>
   )
 }
 

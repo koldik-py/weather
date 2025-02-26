@@ -1,4 +1,21 @@
+@use "../../styles/variables" as *
 .container
   display: flex
   flex-direction: column
   gap: 1.5em
+
+.flex
+  display: flex
+  justify-content: space-between
+  gap: 1em
+
+.btn
+  @include elem-bg
+  border-radius: 1em
+  padding: .75em 2em
+  cursor: pointer
+  color: rgba(255, 255, 255, .5)
+
+  &:hover
+    color: rgba(255, 255, 255, 1)
+    transform: scale(.95)

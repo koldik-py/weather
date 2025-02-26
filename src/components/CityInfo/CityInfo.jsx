@@ -8,7 +8,7 @@ import icon2 from '../../assets/ветер.svg'
 import icon3 from '../../assets/pressure.svg'
 import plash from '../../assets/plash.jpg'
 
-const CityInfo = ({ data }) => {
+const CityInfo = ({ weatherData }) => {
   const {
     name,
     temperature,
@@ -17,8 +17,7 @@ const CityInfo = ({ data }) => {
     humidity,
     windSpeed,
     pressure
-  } = data
-
+  } = weatherData
   return (
     <section className={styles.city}>
       <h1 className={styles.title}>Текущая погода</h1>
