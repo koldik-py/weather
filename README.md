@@ -1,3 +1,6 @@
 Приложение погода.
 
-React + redux + API
+React
+Redux
+API
+Сохранение данных в local storage
